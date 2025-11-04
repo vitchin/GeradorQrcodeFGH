@@ -44,7 +44,11 @@
     <div class="container max-w-[600px] w-full shadow-lg border border-gray-300 rounded-lg flex flex-col items-center justify-center">
         
         <div class="w-full flex flex-col items-center justify-center" id="print-area">
-            <h1 class="mb-4 p-4 bg-blue-500 text-white w-full text-2xl sm:text-4xl text-center font-bold mb-4" style="border-top-right-radius: 8px; border-top-left-radius: 8px;">FGH</h1>
+            <h1 class="mb-4 p-[20px] flex flex-row items-center justify-between rounded-top bg-blue-500 text-white w-full text-4xl text-center font-bold" style="border-top-right-radius: 8px; border-top-left-radius: 8px;">
+                FGH
+                <img src="{{ url_for('static', filename='img/fghLogo.png') }}" class="w-10 h-auto" alt="logo">
+            </h1>
+
             <div id="qrcode" class="mb-4 max-w-[350px] w-fit h-auto sm:h-[350px] mx-auto p-2"></div>
             <p class="text-center px-4 text-gray-700 text-[18px]">Manutenção Setorial Predial</p>
 
